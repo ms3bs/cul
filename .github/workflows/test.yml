@@ -1,0 +1,13 @@
+name: test
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: clone repo
+      run: echo "test run"
+      
