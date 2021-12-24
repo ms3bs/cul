@@ -11,5 +11,5 @@ jobs:
     - name: clone repo
       uses: actions/checkout@v2
     - run: cd ${{ github.workspace }}
-    - run: cmake 0.cpp
+    - run: cmake ${{ github.workspace }}/lala
       
