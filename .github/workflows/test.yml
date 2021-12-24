@@ -10,6 +10,10 @@ jobs:
     steps:
     - name: clone repo
       uses: actions/checkout@v2
-    - uses: actions/setup-msbuild@v1.1
-    - run: msbuild 0.cpp
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
+      with:
+        vs-version: '[16.4,16.5)'
+    - run: MSBuild -ver
+
       
