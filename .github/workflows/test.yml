@@ -11,4 +11,4 @@ jobs:
     - name: clone repo
       uses: actions/checkout@v2
     - name: lala
-      run: echo "test run"
+      run: gcc 0.c -o lb
