@@ -10,7 +10,6 @@ jobs:
     steps:
     - name: clone repo
       uses: action/checkout@v2
-    - name: run
     - run: cd ${{ github.workspace }}
     - run: cmake 0.cpp
       
