@@ -11,4 +11,6 @@ jobs:
     - name: clone repo
       uses: actions/checkout@v2
     - name: lala
-      run: 0.cpp
+      run: 
+        0.cpp
+        ./main
