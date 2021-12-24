@@ -14,6 +14,6 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
     - run: MSBuild -ver
     - name: Run MSBuild
-      run: msbuild -m dc-lab3.sln
+      run: msbuild -m dc-боота.sln
 
       
