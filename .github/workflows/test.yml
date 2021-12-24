@@ -15,10 +15,5 @@ jobs:
     - run: MSBuild -ver
     - run: cd ${{ github.workspace }}/prog3
     - name: Run MSBuild
-      run: msbuild -m ${{ github.workspace }}/prog3/боота.sln
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.3.1
-      with:
-          name: Build
-          path: x64/Debug/боота.exe
+      run: msbuild -m ${{ github.workspace }}/test.sln
 
