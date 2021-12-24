@@ -6,8 +6,9 @@ on:
     branches: [ main ]
 jobs:
   testing:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - name: clone repo
+      uses: actions/checkout@v2
+    - name: lala
       run: echo "test run"
-      
